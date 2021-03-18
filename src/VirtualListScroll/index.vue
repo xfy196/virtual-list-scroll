@@ -73,12 +73,16 @@ export default {
         this.updateVb(scrollTop);
       });
     },
-    findBlockHeightLowerBound(viewportBegin, flexdBlockHeight) {
+    findBlockHeightLowerBound(viewportBegin, flxedBlockHeight) {
       const sAdjusted = this.pageMode
         ? viewportBegin - this.$refs.scrollTop
         : viewportBegin;
+      const computedStartIndex = ~~(sAdjusted / flxedBlockHeight);
+      return computedStartIndex >= 0 ? computedStartIndex : 0;
     },
-    binarySearchLowerBound(viewportBegin, transformedData) {},
+    binarySearchLowerBound(viewportBegin, transformedData) {
+      console.log(viewportBegin, transformedData);
+    },
     findBlocksInViewport(viewportBegin, viewportEnd, transformedData, data) {
       // 当视窗的开始高度小于视窗结束的高度
       if (viewportBegin < viewportEnd) {
