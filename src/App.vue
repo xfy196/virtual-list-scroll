@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import VirtualListScroll from "./index";
 import Vue from "vue";
+import VirtualListScroll from "./index";
 Vue.use(VirtualListScroll)
 export default {
     name: "App",

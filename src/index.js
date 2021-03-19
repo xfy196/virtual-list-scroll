@@ -1,7 +1,7 @@
-import VirtaukListScroll from "./VirtualListScroll/index.vue"
+import VirtualListScroll from "./VirtualListScroll"
 const plugin = {
 	install(Vue) {
-		Vue.component("VirtualListScroll", VirtaukListScroll)
+		Vue.component("VirtualListScroll", VirtualListScroll)
 	}
 }
 export default plugin
