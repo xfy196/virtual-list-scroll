@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="header">Virtual Block</div>
+        <div class="header">Virtual List Scroll</div>
         <div class="userOptions">
             <span class="option">
                 <span>
@@ -34,11 +34,6 @@
                 </div>
             </template>
         </VirtualListScroll>
-        <div class="footer">
-            <span>
-                🌈#supportlgbt :)
-            </span>
-        </div>
     </div>
 </template>
 
