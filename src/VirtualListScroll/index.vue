@@ -271,7 +271,7 @@ export default {
     containerStyle() {
       return {
         ...(!this.pageMode && { height: `${this.height}px` }),
-        ...(!this.pageMode && { "overflow-y": "scroll" })
+        ...(!this.pageMode && { "overflow-y": "auto" })
       };
     }
   }
