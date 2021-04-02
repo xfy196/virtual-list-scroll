@@ -131,7 +131,7 @@ export default {
      */
     findBlockHeightLowerBound(viewportBegin, flxedBlockHeight) {
       const sAdjusted = this.pageMode
-        ? viewportBegin - this.$refs.scrollTop
+        ? viewportBegin - this.$refs.vb.scrollTop
         : viewportBegin;
       const computedStartIndex = ~~(sAdjusted / flxedBlockHeight);
       return computedStartIndex >= 0 ? computedStartIndex : 0;
