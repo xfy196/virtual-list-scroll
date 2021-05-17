@@ -2,7 +2,7 @@
 ### Install
 
 ```shell
-npm i virtual-list-item
+npm i virtual-list-scroll
 ```
 
 ### Import
